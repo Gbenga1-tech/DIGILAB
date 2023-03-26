@@ -1,0 +1,202 @@
+/*################# defaults  ###########*/
+nav,header,footer {
+    display: block;
+
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   line-height: 1.5;
+   margin: 0;  
+   font-family: 'Poppins', sans-serif;
+ }
+  
+.hero {
+    width: 100%;
+   margin: 0;
+   padding: 0;
+    background-image: url('./image/ben-kolde-Ajcipx1VDXI-unsplash.jpg');
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: right bottom; /* This determines where the background image is placed */
+    height: 100vh; /* This sets the height of the container to the full height of the viewport */
+    background-repeat: no-repeat;
+    
+    
+     
+}
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+ 
+ .row::after {
+    display: table;
+    clear: both;
+    content: "";
+ }
+ 
+ .col-1 {width: 8.33%};
+  .col-2 {width: 16.66% ;}
+  .col-3 {width: 25% ;}
+  .col-4 {width: 33.33% ;}
+  .col-5 {width: 41.66% ;}
+  .col-6 {width: 50% ;}
+  .col-7 {width: 58.33% ;}
+  .col-8 {width: 66.66%}
+  .col-9 {width: 75%}
+  .col-10 {width: 83.33% ;}
+  .col-11 {width: 91.66% ;}
+  .col-12 {width: 100% ;}
+      
+ 
+ 
+/* nav bar */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+ }
+ 
+ a:hover {
+    color: lime;
+    
+ }
+ .navbar {
+    font-weight: 600;
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .navbar .topnav {
+    margin-right: 2%;
+    display: flex;
+    gap: 2.5rem;
+ }
+ .toggle_btn{
+    display: none;
+ }
+ .highlight {
+    color: lime;
+ }
+ .navbar .logo a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+ }
+/***** drop down menu *****/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background:rgb(252, 252, 252,0.1);
+    backdrop-filter: blur(5px);
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+ .dropdown_menu.open  {
+    height: 295px;
+ }
+ 
+ .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+/* style */
+.col-6, .col-12,.col-4
+{
+   width: 100%;
+   height: 100%;
+   
+}
+div.leftside-col {
+   margin-top: 5%;
+   margin-left: 5%;
+}
+.first {
+    font-size: 17px;
+    color: lime;
+    line-height: 4;
+}
+.second {
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 1;
+}
+.impress {
+    font-weight: bold;
+    
+}
+p {
+    margin-top: 30px;
+}
+button {
+    margin-top: 40px;
+    
+    font-size: 15px;
+    background-color: lime ;
+    color: white;
+    padding:20px 40px 20px   ;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+ }
+ 
+ .button:hover {
+    scale: 1.05;
+    color: black;
+ }
+ .button:active {
+    scale:0.95;
+ }
+
+
+
+ /****** mobile responsive design****/
+@media(max-width: 992px){
+    .navbar .topnav, .navbar .action_btn {
+       display: none;
+    }
+    .navbar .toggle_btn {
+       display: block;
+    }
+    .dropdown_menu {
+       display: block;
+    }
+    
+    
+    }
+    @media(max-width: 576px){
+  
+        .dropdown_menu {
+           left: 2rem;
+           width: unset;
+           
+        }
+        .container {
+           position: relative;
+        }
+    }
+ 

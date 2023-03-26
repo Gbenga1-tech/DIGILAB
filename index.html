@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGILAB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <div class="logo"><a href="#">DIGI <span class="highlight" >LOGO</span></a></div>
+                <ul class="topnav" >
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> Services</a></li>
+                    <li><a href="#"> Projects</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Testimony</a></li>
+                    <li><a href="#"> Blog</a></li>
+                    <li><a href="#"> Contact </a></li>
+                    </ul>
+                
+                    <div class="toggle_btn"><a href="#">&#9776;</a></div>
+                
+                 
+         
+        </div>
+        <div class="dropdown_menu" >
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="#"> Insights</a></li>
+            <li><a href="#"> Public Sector</a></li>
+            <li><a href="#"> Contact us</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    
+    </header>
+  <main>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="first">WELCOME TO THE DIGILAB</h1>
+                    <h1 class="second">Small Details Make A Big <br><span class="impress"> Impression</span> </h1>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Quos <br>  quidem debitis possimus placeat dolores explicabo <br> praesentium iure saepe nisi tenetur!</p>
+                      <button class="button"> Get in touch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick =function () {
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+        toggleBtnIcon.classList = isOpen
+        ? '&#88;'
+        : '&#9776;' 
+      }
+    
+    </script>
+</body>
+</html>
